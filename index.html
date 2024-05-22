@@ -4,11 +4,20 @@
 <link rel="stylesheet" href="style.css" />
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" />
 <link href="https://fonts.googleapis.com/css?family=Nothing+You+Could+Do" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Satisfy&display=swap" rel="stylesheet">
 
 <style>
 html {
 	box-sizing: border-box;
-	font-family: "Nothing You Could Do";
+	font-family: "Satisfy", cursive;
+  	font-optical-sizing: auto;
+  	font-style: normal;
+	font-size: x-large;
 }
 html,
 body {
@@ -20,7 +29,7 @@ body {
 	box-sizing: inherit;
 }
 body {
-	background-color: #F1F1F1;
+	background-color: #ffe8fd;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -49,6 +58,7 @@ body {
     will-change: transform;
 	cursor: pointer;
 }
+
 .card:before {
 	content: "";
 	display: block;
@@ -68,10 +78,10 @@ body {
 	content: var(--caption);
 	font-weight: 500;
 	color: #555;
-	font-size: 3vmin;
+	font-size: 5vmin;
 	text-align: center;
 }
-.card:active {
+.card:active{
     transform: scale(1) rotate(0deg);
     z-index: 1;
 }
@@ -95,6 +105,12 @@ body {
  <div class="card" style="--image: url('img/3.jpg'); --angle: -4deg; --x: -20%; --y: 5%; --caption: 'Propose'"></div>
 
  <div class="card" style="--image: url('img/2.jpg'); --angle: 7deg; --x: 10%; --y: -7%; --caption: 'Winner'"></div>
+
+ <div class="card" style="--image: url('img/8.jpg'); --angle: 2deg; --x: -18%; --y: 38%; --caption: 'Dil Diya Huya Hai'"></div>
+
+ <div class="card" style="--image: url('img/7.jpg'); --angle: -12deg; --x: 15%; --y: 47%; --caption: 'Mere Bhole Bhale Sir ji'"></div>
+ 
+ <!--<div class="card" style="size:cover;--image: url('img/111.jpg'); --angle: 5deg; --x: -14%; --y: 72%; --caption: 'Propose'"></div>-->
 
 </div>
 
